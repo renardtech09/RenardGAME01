@@ -1,1 +1,660 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: "Agency FB";
+}
+html{ scroll-behavior: smooth; }
+body{
+    padding: 0;
+    margin: 0 10px;
+}
+body::-webkit-scrollbar{ width: 0; height: 0; }
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: #fff fixed;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 5px 0 15px 0;
+    z-index: 99;
+}
+main{margin: 1px;}
+header .div1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .div1 .logo img{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+header .div1 ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+header .div1 ul button{
+    padding: 8px 20px;
+    font-family: "Bahnschrift Light";
+    font-size: 16px;
+    font-weight: 700;
+    background: black;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+header .div1 ul i{
+    font-size: 27px;
+    font-weight: 800;
+    cursor: pointer;
+}
+header .div2{
+    width: 100%;
+    background: rgb(181, 177, 177);
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+header .div2 input{
+    width: 75%;
+    padding: 5px 15px;
+    font-family: "Bahnschrift Light";
+    font-size: 16px;
+    background: none;
+    border: none;
+    outline: none;
+}
+header .div2 button{
+    margin: 5px;
+    padding: 5px 15px;
+    font-family: "Bahnschrift Light";
+    font-size: 16px;
+    background: rgb(112, 111, 111);
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.menu{
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding:  0 15px;
+    z-index: 99;
+}
+.menu ul {
+    padding: 0;
+}
 
+.menu ul li a{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: "Bahnschrift Light";
+    gap: 15px;
+}
+.menu ul li{
+    padding: 5px 15px;
+}
+.menu ul li:hover{
+    background: rgb(234, 231, 231);
+    transition: all 0.2s;
+  }
+.menu.active{
+    display: block;
+}
+.descr{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descr .descr1{
+    width: 100%;
+    display: flex;
+    gap: 25px;
+}
+.descr .descr1 .div1{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.descr .descr1 .div01{
+    background-color: #fdfbfb;
+    border-radius: 5px;
+    box-shadow: 0.75px 1px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.descr .descr1 .div01 h3{
+    margin: 5px;
+    padding: 7px 15px;
+    color: #121212;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.descr .descr1 .div01 i{
+    margin: 5px;
+    padding: 7px 25px;
+    border: 2px solid;
+    border-radius: 4px;
+    text-shadow: 0.6px 0.6px 3px black;
+    border: 1px solid rgb(41, 40, 40);
+    outline: none;
+    color: #121212;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.descr .descr1 button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 6px 15px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    background: black;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+.descr .descr1 button:hover{
+    box-shadow: -1.5px -1.5px 1.5px rgb(38, 37, 37),
+                1.5px 1.5px 1.5px rgb(152, 150, 150)
+}
+.descr .descr1 .div2{
+    width: 75%;
+    max-height: 300px;
+    background: none;
+}
+.descr .descr1 .div2 img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.wow{
+    margin: 25px 0 25px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wow h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.wow .div0{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.wow .div0 .elm{
+    min-height: 250px;
+    border-radius: 5px;
+    flex-grow: 1;
+    flex-basis: 150px;
+    transition: all 2s;
+    background-color: rgb(214, 221, 223);
+}
+.wow .div0 .elm img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.descr .descr2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descr .descr2 h2{
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.descr .descr2 ul{
+    width: 100%;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.descr .descr2 ul li a{
+    margin: 0;
+    background: black;
+    border-radius: 4px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px 5px 5px;
+    gap: 10px;
+}
+.descr .descr2 ul li a i{
+    padding: 5px;
+    background: #ccc;
+    border-radius: 50%;
+    color: #121212;
+}
+.descr .descr3{
+    margin: 0 25px;
+    padding: 15px 0;
+    width: 100%;
+    background-color: #cccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.descr .descr3 h3{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.descr .descr3 button{
+    margin-top: 5px;
+    padding: 10px 15px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    background: black;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.descr .descr3 .div2{
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+.descr .descr3 .div2 .element{
+    width: 100%;
+    height: 100%;
+}
+.descr .descr3 .div2 .element img{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+.descr .descr3 .div2 .element .price{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.descr .descr3 .div2 .element .price i{
+    background: black;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+}
+.descr .descr3 .div2 .element .price span{
+    background: black;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+.descr .descr3 .div2::-webkit-scrollbar{ width: 0; height: 0; }
+.categories{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.categories h2{
+    cursor: default;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.categories h3{
+    cursor: default;
+    margin: 5px 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.categories .div0{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.categories .div0 .element{
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    flex-basis: 180px;
+    flex-grow: 1;
+    transition: all 2s;
+}
+.categories .div0 .element img{
+    width: 100%;
+    min-height: 150px;
+    max-height: 250px;
+    border-radius: 10px;
+}
+.categories .div0 .element .price{
+    margin-top: 2.5px;
+    display: flex;
+    align-items: center;
+    gap: 2.5px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.categories .div0 .element .price i{
+    background: black;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+}
+.categories .div0 .element .price span{
+    background: black;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+.categories button{
+    background: black;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    outline: none;
+    padding: 7px 14px;
+    margin-top: 5px;
+}
+.lastadd{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.lastadd h3, .lastadd p{
+    margin: 0;
+    padding: 5px 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.lastadd .elm{
+    background: #cccc;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 5px 15px 15px 15px;
+}
+.lastadd .elm h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.lastadd .elm .elm0{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.lastadd .elm .elm0 .element{
+    display: flex;
+    flex-direction: column;
+}
+.lastadd .elm .elm0 .element img{
+    width: 100%;
+    min-height: 150px;
+    max-height: 250px;
+    border-radius: 10px;
+}
+.lastadd .elm .elm0 .element .price{
+    margin-top: 2.5px;
+    display: flex;
+    align-items: center;
+    gap: 2.5px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.lastadd .elm .elm0 .price i{
+    background: black;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px;
+}
+.lastadd .elm .elm0 .price span{
+    background: black;
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+.scrollable{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.scrollable p{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+    margin: 5px;
+    padding: 0;
+}
+.scrollable .divE,
+.scrollable .divW{
+    width: 75%;
+    display: flex;
+    gap: 5px;
+    overflow: hidden;
+}
+.scrollable hr{ width: 50%;}
+.scrollable .divE img,
+.scrollable .divW img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+.scrollable .divE img{ animation: scrollE 10s linear infinite; }
+.scrollable .divW img{ animation: scrollW 10s linear infinite; }
+@keyframes scrollE{
+    0% {transform: translateX(-100%);}
+    100%{transform: translateX(0%);}
+}
+@keyframes scrollW{
+    0% {transform: translateX(0);}
+    100%{transform: translateX(-100%);}
+}
+.others{
+    margin: 0 25px;
+    padding: 0 10px;
+    background: #cccc;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.others h2,
+.others p{
+    margin: 0;
+    padding-top: 15px;
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+.others ul{
+    margin: 25px 0 15px 0;
+    padding: 5px 25px;
+    background: #f3f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    gap: 25px;
+}
+.others ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.others ul li span{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.others ul li p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+footer{
+    width: 100%;
+    background: rgb(23, 21, 23);
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer hr{
+    width: 60%;
+    color: #fff;
+}
+footer .div0,
+footer .div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "agency fb";
+}
+footer .div0{ flex-direction: column; }
+footer .div3, footer .div0{ max-width: 450px; }
+footer .div0 img{
+    margin-top: 15px;
+    width: 150px;
+    height: 50px;
+}
+footer .div0 h2{
+    margin: 15px 0 0 0;
+    color: white;
+    font-size: 16px;
+}
+footer .div0 h3,
+footer .div3 h3{
+    color: white;
+    margin: 15px;
+    text-align: center;
+}
+footer .div1{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+footer .div1 i{
+    background: black;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.6rem;
+    padding: 10px;
+}
+footer .div2{
+    margin: 0 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+footer .div2 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "agency fb";
+    gap: 5px;
+}
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "agency fb";
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 600px){
+    body{
+        margin: 0 5px;
+    }
+    .menu{ right: 0; }
+    .descr .descr1{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .descr .descr1 .div1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .descr .descr1 .div2{
+        width: 100%;
+        height: 100%;
+        background: none;
+    }
+    .descr .descr3{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .descr .descr3 .div2{
+        width: 100%;
+    }   
+    .lastadd .elm .elm0{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
