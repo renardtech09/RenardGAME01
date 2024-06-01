@@ -16,9 +16,42 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    var panierUl = document.getElementById('panier');
-    
+document.querySelectorAll('.price').forEach(function(element) {
+    element.addEventListener('click', function() {
+        var elementInfo = {
+            id: element.dataset.id,
+            img: element.dataset.img,
+            price: element.dataset.price,
+        };
+        localStorage.setItem('element_' + elementInfo.id, JSON.stringify(elementInfo));
+    });
+});
+
+
+var panierUl = document.getElementById('panier');
+for (var i = 0; i < localStorage.length; i++) {
+    var key = localStorage.key(i);
+    if (key.indexOf('element_') === 0) {
+        var elementInfo = JSON.parse(localStorage.getItem(key));
+        var elementLi = document.createElement('li');
+        elementLi.innerHTML = `
+            <img src="${elementInfo.img}" alt="">
+            <div>
+                <div class="price"><i class="material-symbols-outlined">currency_franc</i><span>${elementInfo.price}</span>
+            </div>
+        `;
+        panierUl.appendChild(elementLi);
+    }
+}
+document.getElementById('clear').addEventListener('click', function() {
+    for (var i = 0; i < localStorage.length; i++) {
+        var key = localStorage.key(i);
+        if (key.indexOf('element_') === 0) {
+            localStorage.removeItem(key);
+        }
+    }
+    location.reload();
+});    
     // Générer un identifiant unique pour l'utilisateur
     var userId = Date.now() + '_' + Math.random().toString(36).substr(2, 9);
 
