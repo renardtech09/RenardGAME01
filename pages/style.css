@@ -1,1 +1,354 @@
-
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: "agency fb";
+}
+html{ scroll-behavior: smooth; }
+body{
+    padding: 0;
+    margin: 5px 15px;
+}
+body::-webkit-scrollbar{ width: 0; height: 0; }
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: #fff fixed;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 5px 0 15px 0;
+}
+header .div1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .div1 .logo img{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+header .div1 ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+header .div1 ul button{
+    padding: 8px 20px;
+    font-family: "Bahnschrift Light";
+    font-size: 16px;
+    font-weight: 700;
+    background: black;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+header .div1 ul i{
+    font-size: 27px;
+    font-weight: 800;
+    cursor: pointer;
+}
+header .div2{
+    width: 100%;
+    background: rgb(181, 177, 177);
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+header .div2 input{
+    width: 75%;
+    padding: 5px 15px;
+    font-family: "Bahnschrift Light";
+    font-size: 16px;
+    background: none;
+    border: none;
+    outline: none;
+}
+header .div2 button{
+    margin: 5px;
+    padding: 5px 15px;
+    font-family: "Bahnschrift Light";
+    font-size: 16px;
+    background: rgb(112, 111, 111);
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.menu{
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding:  0 15px;
+    z-index: 99;
+}
+.menu ul{
+    padding: 0;
+}
+.menu ul li a{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: "Bahnschrift Light";
+    gap: 15px;
+}
+.menu ul li{
+    padding: 5px 15px;
+}
+.menu ul li:hover{
+    background: rgb(234, 231, 231);
+    transition: all 0.2s;
+  }
+.menu.active{
+    display: block;
+}
+.nav.back{
+    background: black;
+    color: #fff;
+}
+header h2{
+    margin: 15px;
+    padding: 10px 0;
+    background: black;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+header .div01{
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+header .div01 a{
+    background: #ccc;
+    border-radius: 4px;
+    color: black;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 7px 25px;
+}
+header .div01 span{
+    font-size: 20px;
+    font-weight: 900;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+main .div1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main .div1 h3{
+    margin: 0 0 5px 0;
+    padding: 7px 14px;
+    background: black;
+    border-radius: 4px;
+    color: white;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+main .div1 .container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+main .div1 .container .element{
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    transition: all 2s;
+}
+main .div1 .container .element img{
+    width: 100%;
+    min-height: 150px;
+    max-height: 250px;
+    border-radius: 10px;
+}
+main .div1 .container a{
+    margin: 2.5px;
+    padding: 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 2.5px;
+}
+main .div1 .container a i{
+    background: black;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+}
+main .div1 .container a span{
+    background: black;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 0 0;
+}
+main .others{
+    padding: 7px;
+    width: 85%;
+    background: #ccc;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    gap: 5px;
+}
+main .others a{
+    margin: 0;
+    padding: 5px 25px;
+    background: black;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    gap: 5px;
+}
+main .others a h3{
+    text-align: center;
+}
+main .others a i{
+    font-size: 20px;
+    font-weight: 600;
+}
+hr{ width: 75%;}
+footer{
+    width: 100%;
+    background: rgb(23, 21, 23);
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer hr{
+    width: 60%;
+    color: #fff;
+}
+footer .div0,
+footer .div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "agency fb";
+}
+footer .div0{ flex-direction: column; }
+footer .div3, footer .div0{ max-width: 450px; }
+footer .div0 img{
+    margin-top: 15px;
+    width: 150px;
+    height: 50px;
+}
+footer .div0 h2{
+    margin: 15px 0 0 0;
+    color: white;
+    font-size: 16px;
+}
+footer .div0 h3,
+footer .div3 h3{
+    color: white;
+    margin: 15px;
+    text-align: center;
+}
+footer .div1{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+footer .div1 i{
+    background: black;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.6rem;
+    padding: 10px;
+}
+footer .div2{
+    margin: 0 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+footer .div2 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "agency fb";
+    gap: 5px;
+}
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "agency fb";
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 600px){
+    body{
+        margin: 0 5px;
+    }
+    .menu{ right: 0; }
+    header .div01{
+        margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    header .div01 a{
+        background: #ccc;
+        border-radius: 4px;
+        color: black;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 7px 15px;
+    }
+    header .div01 span{
+        display: none;
+    }
+}
