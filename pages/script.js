@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function genererLienPanierUtilisateur(userId) {
         // Générer le lien vers le panier avec les sélections de l'utilisateur
-        var lienVersPanier = "https://jt-tech09.github.io/FoxGAME/pages/MonPanier.html";
+        var lienVersPanier = "https://renardtech09.github.io/RenardGAME01/pages/MonPanier.html";
 
         // Récupérer les sélections de l'utilisateur depuis le localStorage
         var selectionsUtilisateur = [];
